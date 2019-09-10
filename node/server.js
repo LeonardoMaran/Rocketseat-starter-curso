@@ -1,6 +1,9 @@
 const express = require('express');
+const mongoose = require('mongoose');
 
 const app = express();
+
+mongoose.connect('mongodb://localhost:27017/config',{ useUnifiedTopology: true });
 
 app.get("/", (req, res)=>{
     res.send('Hello Rocketseat');
@@ -151,3 +154,96 @@ app.listen(3001);
 //  robo3t de .novo e voce vai ter acesso a uma .interface muito parcedica com esta aqui certo e ai voce praticamnete 
 //  nao vai ter acesso a nenhuma connection, aqui agente vai criar umado zero, agente vai vir aqui em create eu posso 
 //  deixar o endereco localhost porta 27017      
+
+// Using the official mongo image from the docker hub, I run the following command to get it running:
+
+// docker run --name api -p 127.0.0.1:27017:27017 -p 127.0.0.1:28017:28017 -d mongo
+
+// Docker info 
+
+// Quando acabamos de subir o docker engine, nos utilizamos esse comando para verificarmos as informações do nosso docker host 
+
+// Docker version 
+
+// Versao do client 
+
+// Docker images 
+
+// Docker search
+// Procura imagens 
+
+// Docker pull (parâmetro)
+// Baixar imagem 
+
+// Docker ps 
+// status do container 
+
+// Docker ps -a
+
+// Lista de todos os containers do host 
+
+// Docker stats 
+
+// Status do container 
+
+// Docker rmi ( nome da imagem)
+
+// Docker stop 
+
+// Docker stop ( id ou nome container)
+
+// Docker start ( nome container)
+
+// admin e loccal, agente nao vai criar nada por enquanto, agente 
+// nao precisa cirar nada, o nosso projeto em node vai automaticamnete
+// criar as tabelas que sao os schemas dentro do mongo, tudo certinho 
+// agente nao precisa se preocupar em nada, aente vai utilizar o robo3t 
+// mesmo para verfificar se os dados estao sendo persistidos no banco 
+// quando agente vai fazer as criacoes la por dentro do nosso codigo,
+//  entao agora ageente ja utilizou o docker e agente utilizou tambem 
+//  o robo3t, e importante falar que provavelmente a sa imagem quando voce 
+//  reiniciar o computador ela vai parar de se executar, mas voce nao precisa
+//  executar o docker run novamente, por exemplo eu tenho um banco mysql que
+//  nao esta rodando agora, como voc pode ver a imagem no docker ps passando
+//  o comando -a, all entao aqui eu tenho o mongodb que esta com o status exe
+//  o status que vai ficar se voce reiniciar a sua maquina mas agente consegue 
+//  subir isto basicamente fazendo docker start  
+
+// Aula 6
+
+// agora que agentee ja instalou o mongodb agente vai fazer a conexao com o banco 
+// de dados, entao eu vou vir aqui na minha aplicacao agente vai  instalar uma nova 
+// dependencia por isto eu vu dar 
+
+// npm install mongoose
+
+// uma dependecia de porducao, eu vou esperar ele instalar o mongoose, o mongooge é
+// ele é um orm de bancos nao relacionais com mongodb que é um orm, orm basicamente
+//  ele encapsula a logica das operacoes d banco de dados atraves do codigo, entao o 
+//  que que quer dizer isto, ao inves de agente utilizar a linguagem da base de dados 
+//   vamos supor que ageente estivesse no banco sql, ao inves de agente ficar passando
+//   insert into tabela valores, agente vai utilizar apenas codigos javascripts para 
+//   fazer inserts, deletes, updates etudo mais beleza, por isso que é orm, ele vai fazer 
+//   object, relational mapping, é a relacao de transformar a nossa tabela do banco de 
+//   dados em objeto para agente no javascript, agente vai ver como é que isto funciona 
+//   na pratica, daqui a pouquinho nao fica com medo do orm porque ele e bem tranquilo 
+//   beleza. Agora que ja  terminou a instalacao do mongoose, vou vir aqui no meu serverjs
+//   vou importar o meeu mongoose, e agora vamos adicionar os comentarios para que agente 
+// aqui basicamente agente esta iniciando o app, aqui agente criou a nossa primeira rota 
+// e aqui eu vou criar uma sessao de iniciando banco de dados, como é que agente inicia 
+// um banco de dados, basicamente eu  vou fazer um mongoose.connect e agora agente vai 
+// .precisar passar a url de conexao, por padrao agente comeca com mongodb:// é o protocolo 
+// ai agente segue com o ip se agente tiver com usuario e senha voce vai precisar utilizar 
+// usuario e senha na  url de conexao, user @ passworld, mas como eu nao tenho eu vou apenas
+// colocar localhost segui o tutorial da aula passada é só colocar localhost aqui, a porta que 
+// voce esta utilizando e / o nome da database que voce vai utilizar,o schema que voce vai 
+// utilizar, o nodeapi e agora eu vou passar o objeto de parametro para passar uma unica informacao
+// que e o i new url parser, que na versao que eu estou utilizando ele teve uma atualizacao na 
+// url do mongodb de conexao, talvez quando voce for utiliza esta versao numa opcao mais atualizada
+// ela nao seja utilizada, o mongoogse vailhe retornar uma menssagem de erro e voce pode retirar isto 
+// aqui, enquanto é necessario utilizar, show de Boolean, com isso agente ja conseguiu fazer a conexao 
+// com o banco de dados, mas como é que eu sei que a minha conexao deu certo, eu salvo o meu projeto 
+// e vejo se vai retornar algum erro no meu mongoose no nosso terminal. 
+
+
+//00:28:32
