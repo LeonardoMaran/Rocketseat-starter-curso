@@ -1,0 +1,95 @@
+//Aula 5 00.16.55
+
+// Nesta aula agente vai instalar o mongoDb na nossa maquina e para isto agente vai usar um software chamado docker na nossa maquina, agente nao vai instalar seguindo os passos de instalacao la n mongodb se voce tem instalado o mongo db 
+// pode usar o que voce tm instalado, agente vai insalar o docker PermissionRequest, o docker e o software que peermite agente fazer a conteinerizacao de recursos de softwares ou qualquer tipo de aplicacao da nossa maquina, porque isso 
+// e o que e este conceito de conteinerizacao, ja teve algum momeento que voce instalou o mysql na sua maquina e depois voce teve que reinstalalo e sobrou resquicios da outra instalacao e deu algum conflito, ou seja as vezes voce instalou 
+// muita coisa na sua maquina que voce nem lembra mais o que esta instalado, voce tem que formatar .etc, estas instalacoes sao coisas de desenvolvedor, mongo, mysql, 
+//  node, npm e assim vai, agente consegue fazer todas estas instalacoes em containers, em maquinas virtuais se em algum momento agente precisar deletar estas instalacoes, mecher em qualquer coisa no nosso .sistema entao agente vai subir 
+//  uma maquina virtual rodando um sistema linux por traz vai conter a instalacao do mongo poderia ser mysql poderia ser qualquer coisa e muito facil fazer esta instalacao e se em qualquer momento agente precisar deletar isto, ou alterar ou 
+// recriar fica muito facil porque esta maquina virtual nao vai mecher em nada no nosso sistema, vai ficar um sistema totalmente à parte que voce consegue manipula ele da forma que voce quiser, para agente comecar instalando o docker agente 
+// entra no site delees docker.com  clicamos no get docker e aqu do lado que de, docker edition, no mc e so o .dmg que ageente vai baixar, no seu terminal voce vai possivel digitar o comando docker e ele vai mostrar esta lista de comandos 
+
+// basicamente como e que agente vai fazer e baixar a maquina virtual do mongoDb, o container do mongo db para agente executar na nossa maquina, o que agente vai fazer é 
+
+// docker pull mongo
+
+// e depois que ja esta instalado agente precisa subir uma nova maquina virtual um novo container e esta instalacao rodando para isto eu vou utilizar o comando docker run 
+// o primeiro parametro que eu vou passar e um name o que eu quero e chamar este container dentro do meu sistema, eu vou chamar ele de mongodb 
+
+// docker run --name mongodb -p 27017:27017 -d mongo
+
+// o segundo parametro que eu vou passar aqui e o comando p, porque eu estou passando este ifem p aqui basicamente como o mongo vai estar rodando outro sistema  e nao o .mac
+// o windows o ubunto ele vai estar num sistema a parte de outro ubuntu que voce nao vai estar enxergando agente vai ter que fazer um rediricionamento de porta, entao o mngo db utiliza a porta 
+// 27017 new, e agente precisa falar entao toda a vez que agente tenta acessar a porta 27017 da nossa maquina ele redireciona para a porta  27 do mongodb deste container  
+
+// o ultimo parametro aqui e o ifem -d imagem que eu quero utilizar entao, imagem e basicamete quando eu dou um pull eu baxo uma imagemum preset de container, entao aqui basicamente eu dou um enter 
+ 
+// ele vai retornar este codigo muito loco aqui, agora agente pode rodar o comando 
+
+// docker ps 
+
+// para ele retornar quais imagens eles estao rodando e esta redirecionando a PerformanceTiming, e 
+// como e que agente faz para testar isto eu posso ir no meu navegador e acessar a porta 27017 dai ele 
+// pode retornar uma mensagem parecida como esta
+
+//  24.15   ele nao pode dar um erro aqui de http de pagina nao encontrada,  ele tem que retornar e ai voce vai sabeer 
+// como o mongo esta executando, como e que eu posso testar mais afundo para ver como e que eu consigo executar 
+//  os schemas, as databases do meu mongo e tudo mais, agente precisa utilizar um software chamado robo3t tranquilo 
+//  vou digitar aqi no google, agente acessa esta site robomongo.org agente vem na opcao download robo3t e aqui download 
+//  robo3t de .novo e voce vai ter acesso a uma .interface muito parcedica com esta aqui certo e ai voce praticamnete 
+//  nao vai ter acesso a nenhuma connection, aqui agente vai criar umado zero, agente vai vir aqui em create eu posso 
+//  deixar o endereco localhost porta 27017      
+
+// Using the official mongo image from the docker hub, I run the following command to get it running:
+
+// docker run --name api -p 127.0.0.1:27017:27017 -p 127.0.0.1:28017:28017 -d mongo
+
+// Docker info 
+
+// Quando acabamos de subir o docker engine, nos utilizamos esse comando para verificarmos as informações do nosso docker host 
+
+// Docker version 
+
+// Versao do client 
+
+// Docker images 
+
+// Docker search
+// Procura imagens 
+
+// Docker pull (parâmetro)
+// Baixar imagem 
+
+// Docker ps 
+// status do container 
+
+// Docker ps -a
+
+// Lista de todos os containers do host 
+
+// Docker stats 
+
+// Status do container 
+
+// Docker rmi ( nome da imagem)
+
+// Docker stop 
+
+// Docker stop ( id ou nome container)
+
+// Docker start ( nome container)
+
+// admin e loccal, agente nao vai criar nada por enquanto, agente 
+// nao precisa cirar nada, o nosso projeto em node vai automaticamnete
+// criar as tabelas que sao os schemas dentro do mongo, tudo certinho 
+// agente nao precisa se preocupar em nada, aente vai utilizar o robo3t 
+// mesmo para verfificar se os dados estao sendo persistidos no banco 
+// quando agente vai fazer as criacoes la por dentro do nosso codigo,
+//  entao agora ageente ja utilizou o docker e agente utilizou tambem 
+//  o robo3t, e importante falar que provavelmente a sa imagem quando voce 
+//  reiniciar o computador ela vai parar de se executar, mas voce nao precisa
+//  executar o docker run novamente, por exemplo eu tenho um banco mysql que
+//  nao esta rodando agora, como voc pode ver a imagem no docker ps passando
+//  o comando -a, all entao aqui eu tenho o mongodb que esta com o status exe
+//  o status que vai ficar se voce reiniciar a sua maquina mas agente consegue 
+//  subir isto basicamente fazendo docker start  

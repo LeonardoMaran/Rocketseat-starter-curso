@@ -1,0 +1,33 @@
+Aula 2
+
+Nesta aula agente vai criar o nosso primeiro
+projeto em react native, eu deixei um pdf em react native
+de todos os passos de instlacao do react native do java skd
+para voce conseguir rodar o projeto no emulador do android 
+mas caso voce esteja no mc voce tambem consegue rodar no emulador
+do ios o processo e um pouqinho mais facil beleza, assim que voce 
+terminar o processo de instalacao do react voce digita o comando 
+
+react-native -v 
+
+ai vai retornar a versao e ai voce vai ver que o react native 
+esta instalado, ai numa pasta qualquer eu vou rodar o comando 
+
+react-native init 
+
+e vou dar o nome do meu projeto, neste caso aqui eu vou dar o 
+nome de hunt, beleza. Eu vou testar aqui o simulador do ios
+e como eu estou  usando o iphone x eu vou passar como parametro 
+o nome do simulador que eu estou usando 
+
+react-native run-ios --simulator=iphone x"
+
+ele abriu aqui no meu terminal ula abinha com o metrobundler
+o que seria esta abinha com o metrobundler rodando na nossa aplicacao
+este bundler é como se fosse aquele nosso webpack quando agente esta 
+desenvolvedo react para web mas quanto à isso fica tranquilo, o bundler
+ele lê todo o nosso codigo javascript que agente criou na nossa aplicacao
+ unisse tudo em um unico arquivo js e transformasse este arquivo numa orma que a nossa
+ aplicacao nativa consiga entender, entao ele pega o arquivo javascript ele transpila 
+ algumas partes com o babel para versoes anteriores que o javascript core la dentro 
+  do react native 

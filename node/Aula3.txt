@@ -1,0 +1,14 @@
+//  Aula 3
+ 
+//  00.11.57 O que agente vai fazer nesta aula é criar a primeira rota da nossa aplicacao, entao quando o usuario digita localhost 3001 agente vai retornar uma mensagem na tela 
+//  entao como e que agente vai fazer isto, app.get, agente esta dizendo que toda a vez quee o usuario acessar a rota e agente esta dizendo aqui que rota que é, como eu nao tenho rota
+//  que eu quero que a  rota seja a rota raiz que eu quero que nao tenha nada escrito aqui eu vou digiar apenas uma barra aqui no codigo aqui vai ficar a rota raiz virgula ne o segunto 
+//  parametro aqui desta rota get e uma funcao que recebe dois parametros, o req e o res que eu ja vou falar o que que é estes dois parametros.O parametro req ele simboliza a requisicao 
+//  que agente esta fazendo no servidor, entao quando eu estou acessando a sessao do url, agente esta fazendo uma requisicao por servidor e o req  vai conter todos os detalhes e informacoes 
+//  possiveiss desta requisicao e o que que vai estar dentro do req entao o que agente vai pegar do req, paramentros, corpo da requisicao, cabecalho da requisicao, usuariio que  esta fazendo 
+//  da requisicao, autenticacao, se esta autenticando ou nao ta, todos os tipos de informacoes que vao estar na requisicao, tudo isto, mas agente vai acessar atravs do objeto req beleza, por enquanto
+//  agente nao vai utilizar ele mas agente vai ver durante o .curso. O res aqui ele tem a ver com a resposta que  agente vai dar para a requisicao, entao, basicamente o fluxo do backend e agente fazendo 
+//  uma requisicao e o servidor fazendo uma resposta, entao aqui no res vao estar todas as informacoes para agente devolver uma resposta do usuario, por enquanto agente vai utilizar o metodo send dentro 
+//  do res e agente pode retornar qualquer coisa, agente vai retornar um hello rocket,seat, vou salvar aqui agora e toda a vez que agente faz uma alteracao agente precisa executar o servidor do node novamente 
+  
+//  entao agente acabou de criar a nossa primeira rota, tranquilo, 

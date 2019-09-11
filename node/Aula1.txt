@@ -1,0 +1,28 @@
+
+// Aula 1
+
+// uma introducao breve o node js  basicamente permite que  agente utilize javascript
+// e uma linguagem utilizada muito na web particularmente no frontend o javascript foi uma 
+// linguagem utilizada particularmente para manipulacao de linterface no navegador no browser 
+// e depois o javascript comecou a ser utilizado tanto para desenvolvimento mobile com reactnative
+//  por exemplo e tambem agora ja faz um tempo na verdade para servidor utiizando node.j no backend
+//  node js o que agente pode dizer o que e o node js, e umaplataforma que utiliza da v8 a engine de
+//  entendimento de javascript ldo google chrome a engine .do browser .do google chrome dentro .do 
+//  javascript .do lado .do backend entaao agente basicamente permite agente utilizar o javascript 
+//   e tratar requisicoes e respostas .do servidor  como acessar banco de dados nos permitiria fazer tambem
+//   e o conceito de api rest porque agente utiliza tambem, basicamente hoje existe dois tipos de aplicacoes
+//   que agente utiliza muito que sao as aplicacoes que agente chama de full mvc quando voce cria a sua parte 
+//   visual da aplicacao junto do seu backend entao voce cria la um wordpress que e muito famoso no php que e o tipo 
+//   de exemplo desta aplicacao entao o servidor e o front end eles estao unidos elesnao ficam separados beleza
+//    quando voce desenvolve uma aplicacao utilizando o conceito de api rest voce separa o backend do front end 
+//     entao voce tem o backend que serve apenas para manipular informacoes do banco de dados, receber requisicoes 
+//     enviar respostas e voce tem o front end separado construido com alguma linguagem ou alguma biblioteca frontend
+//      muito conhecida como por exemplo o react, o vue o react-native o angular e por ai vai. Beleza, e quais sao os 
+//      beneficios de utilizar uma api rest de acordo comparando com o outro modelo. Uma api rest oferece para agente 
+//      uma flexibilidade no nosso front end que estas bibliotecas que eu citei anteriormente fornece esta flexibilidade
+//       consegue tratar com os dados de uma maneira mais legal claro que aumenta mais um pouqinho esta complexidade porem 
+//       o resultado final e muito melhor. alem disso agente consegue trabalhar com uma unica api para diferentes plataformas
+//        entao agente consegue ter um unico backend construido com nodejs servido aplicacoes com mobile com java, react native
+//        e tambem servindo uma  aplicacao  web com react e tambem servindo um publico uma comunidade que gostaria de acessar alguns 
+//        dados da nossa aplicacao, entao agente temuma unica aplicacao backend fornecendo dados para multiplos clientes front end beleza
+//        é o que agente ai aprender aqui, a criar uma aplicacao rest utilizando nodejs, express e mongodb 

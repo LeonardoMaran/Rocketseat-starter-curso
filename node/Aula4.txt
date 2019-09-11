@@ -1,0 +1,13 @@
+// Aula 4 00.14.27
+
+// Ate agora como eu falei na ultima aula toda a vez que agente alterar alguma informacao, vamos supor que agente alteraalguma informacao tipo rocetseat por hello world, se agente vir no chrome e atualizar 
+// nao vai entender as alteracoes que ocorreram no arquivo node para isto agente vai utilizar uma ferramenta chamada nodemon, para isto eu vou aqui no meu terminal e instalar como dependencia de desenvolvimento
+// install save dev ou D maiusculo, nodemon
+
+// npm install -D nodemon
+
+// Show de bola, agora que agente ja terminiou eu vou aqui no meu package.json e o que sao estas dependences que sao comparados com esta dependencias, as devs dependencies que foi quando agente utilizou o -D para 
+// fazer a instalacao sao dependencias que agente vai utilizar apenas no nosso ambiente de desenvolvimento, ou seja, enquanto agente esta criando a nossa aplicacao, e sa dependencias que agente nao vai instalar quando 
+// agente vai jogar a nossa aplicacao online. Agora como e que agente faz paara utilizaro nodemon, a melhor forma quee agente pode fazer e criar um script aqui dentro desta nossa tag scripts, eo vou criar um script chamado 
+// dev e eu vou criar um script dentro dele e e vou executar o nodemon server.js que e o nome do nosso script, eu vou salvar isto aqui agora e na hora de executar no terminal ao inves de rodar com node.js agente vai rodar npm 
+//  run dev, o npm run serve para agente executar ests scripts aqui dentro, agente pode adicionar o script que agente quiser      

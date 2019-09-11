@@ -1,0 +1,25 @@
+// Aula 2
+
+// vamos comecar executando o comando npm int-y, o que este comando basicamente fez, se eu der um ls na nossa pasta agente vai ver que 
+// tem um unico arquivo chamado package.json, se eu abrir este arquivo aqui agente vai ver que agente tem algumas instrucoes 
+// de como a nossa aplicacao deve se comportar ne o nome dela a versao a descricao o arquivo principal scripts e tudo mais, mas este package 
+// json ele vai servir para uma principal funcionalidade na aplicacao, eu vou instalar a primeira dependencia na nossa aplicacao o XPathExpression, para 
+// isto eu vou dar um 
+
+// npm install express 
+
+// eu vou esperar terminar a instalacao aqui para agente ver como e que ficou dentro do package json, agora que agente instalou o express, o que é o express
+// o express e basicamente um micro framework ele vai nos ajudar a lidar com rotas e views beleza, basicamente isto as rotas so basicamente os enderecos da url
+// que o usuario vai poder acessar a api, os views na verdade, mas que sao as formas de visualizacao, mas como agente esta utilizando uma api rest agente nao vai 
+// utilizar esta api aqui. Entao, agora que agente ja instalou o express, agente vai comecar configurando o servidor, o nosso arquivo principal da aplicacao que 
+// vai inicializar toda a nossa aplicacao, para isto eu vou criar um arquivo aqui deixa eu abrir o vs code. Podemos ver aqui que ja criou a pasta node builtinModules, esta 
+// pasta aqui vai armazenar as dependencias do express ja esta aqui, e porque tem tantas dependencias aqui, o express tem outras dependencias, temos aqui o package json
+
+// Vamos comecar criando o nosso arquivo principal, eu vou chamar de server.js mas voce pode dar o nome que preferir geralmente voce vai preferir server ou index.js 
+// agente vai comecar importando o express aqui dentro utilizando o require. Agora que agente ja tem acesso ao express, vamos fazer o seguinte, eu vou definir uma variavel
+// uma constante e vou executar a funcao express, o express aqui ele nos retorna uma   funcao e agora eu vou fazer o seguinte app.listen 3001 o que eu estou fazendo aqui, basicamente
+// eu estou falando para a porta 3001 do nosso navegador, agora se eusavar isto aqui 
+// se eu vir aqui no meu terminal, execuar node server.js, deu um erro aqui porque a porta ja esta  sendo utilizada
+
+// claro que ele ainda nao mostrou nada porque ele ainda nao  tem nenhuma tratativa de roteamneto da nossa aplicacao  entao a nossa aplicacao nao sabe como se comportar quando algum usuario 
+// acessa algum endereco localhost na porta 3001, e isso que agente vai entender e fazer a partir da proximas AudioTrackList
