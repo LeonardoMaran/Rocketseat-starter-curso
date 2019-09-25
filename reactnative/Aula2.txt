@@ -27,7 +27,39 @@ o que seria esta abinha com o metrobundler rodando na nossa aplicacao
 este bundler é como se fosse aquele nosso webpack quando agente esta 
 desenvolvedo react para web mas quanto à isso fica tranquilo, o bundler
 ele lê todo o nosso codigo javascript que agente criou na nossa aplicacao
- unisse tudo em um unico arquivo js e transformasse este arquivo numa orma que a nossa
+ unisse tudo em um unico arquivo js e transformasse este arquivo numa forma que a nossa
  aplicacao nativa consiga entender, entao ele pega o arquivo javascript ele transpila 
  algumas partes com o babel para versoes anteriores que o javascript core la dentro 
-  do react native 
+  do react native ainda nao entende por exemplo e ai ele joga este bundle este javascript 
+  unificado la para o nosso dispositivo para ele renderizar o javascript em tela este bundle
+  é a unica dependecia que agente precisa rodar depois do app ja ter sido instalado aqui dentro 
+  do dispositivo, beleza, entao por exemplo vamos supor qe eu fechei meeu emulador, abri de novo
+   quando eu abri a aplicacao e quiser comecar o meu ambiente de novo da aplicacao eu nao preciso
+   rodar mais o run ios o run android de novo, quando eu quiser iniciar o meu projeto de novo 
+ é so eu ir na pasta do projeto, rodar o 
+ 
+ react-native start --port 9988
+
+ e ai vou iniciar o meu bundle de novo, ai eu venho no meu emulador e abro o meu projeto. 
+
+ Eu abri agora este projeto que eu acabei de executar no vs code beleza, e agente vai entender um pouqinho
+ sobre a estrutura de pastas que o react native configura aqui para a gente, beleza, entao basicamente a pasta 
+ android é aonde ficam as configuracoes e o codigo nativo da nossa aplicacao android, agente vai mecher muito 
+ pouco aqui, so para fazer algumas configuracoes, dao deploy da aplicacao e tambem no ios agente tem a parte da 
+ msma coisa do android so  que para ios, os node_modules é basicamente todas as dependecias, babem rc é a configuracao 
+ do babel, buck, flow sao tudo configuracoes de ferramntas do react native, nao ao obrigatirias, configuracoes do git
+ do watchman, e aqui começam alguns arquivos importantes beleza.
+
+ primeiramente o arquivo app.json
+
+  o app.json determina como a nossa aplicacao é exibida pro o usuario final, ai dentro do 
+  
+  index.js é como se fosse o arquivo introdutorio da aplicacao, é aquele que vai carregar assim
+  que a nossa aplicacao for montada e aqui agente vai falar um pouqinho sobre este codigo mais para frente
+  basicamente ele importa este appRegistry, que ele é utilizado uma unica vez em toda a aplicacao, e ele registra 
+  um componente que eu vou falar sobre componentes na proxima aula, mas ele registra um arquivo para ser o arquivo inicial 
+  da aplicacao, beleza, alem do index.js, aqui o arquivo que ele esta utilizando para ser o arquivo incial e o nosso arquivo 
+  app, que e este arquivo app.js que agente vai ver ais para a frente, beleza, e ai ele importa para agente o app.name para ser
+  exibido na nossa tela, entao show de bola este aqui e o nosso arquivo inicial
+
+  e aqui agente tem o package.json, o mesmo package.json que agente tem na web                   

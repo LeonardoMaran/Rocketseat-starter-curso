@@ -1,0 +1,47 @@
+00.10.57 Nesta aula agente vai ver sobre componentes e agente 
+vai dar uma trabalhada aqui na nossa primeira tela da aplicacao
+para entender como o react native funcina na pratica, entao para agente
+conseguir trabalhar nesta primeira tela lembra o que eu falei na aula passada
+ o nosso arquivo inicial da aplicacao é o app.js, eu vou abrir ele aqui e eu vou comecar
+ removendo algumas coisas que nao vai utilizar so para agente entender de forma mais suscinta
+
+ entao,no app.js eu ou comecar removendo os comentarios, agente vai remover aqui estas instructions
+ aqui dentro eu vou eixar apenas um text deste aqui que é o que vai estar escrito welcome to react native
+ e aqui emmbaixo eu vou tirar tambem estesetor aqui de codi instuction, 
+
+ Eu vou aprtar no meu simulador command + D, e eu vou clicar enable live reaload
+ agora sim.volto no meu codigo, dou um save e agente vai ver que ele vai atualizar 
+ automaticamente, 00.12.27
+
+O que eu falei na aula passada no curso é o que eu falei sobre a componentizacao, a componentizacao é basicamente
+uma arquitetura sobre agente separar 00.12.31 o codigo da aplicacao em varios componentes e e uma arquitetura muito 
+utilizada na web quanto no mobile e estes componentes o que sao especificamentes, componentes sao um conjunto de codigo 
+entre a visualizacao mostrado pelo usuario final que nesse caso poderia ser o nosso jsx que utiliza a sintaxe parecida com
+html, codigo de logica que e o nosso javascript, beleza e estilizacao que eu tenho aqui embaixo com a sintaxe parecida com css 
+ entao basicamente esta e a face do componente ele geralmente e escrito como uma classe e agente teque que po padrao exportar o
+ nosso componente do arquivo dele, agente 100% das vezes vai ter 1 componente por arquivo, nao e recomendado agente ter mais de 1 
+ componente por arquivo, entao agente sempre pode dar um export dafault nesta classe como sendo a represntacao daqueele componente 
+ por arquivo, e o componente agente pode pensar em utiliza-lo quando agente vai reutilizar aquele componente ou aquela separacao de
+ codigo faz algum sentido entao por exemplo, quando voce tem uma lista com varios itens dentro este itens pode ser um componente, a 
+ lista pode ser um componente, o nosso header aqui em cima pode ser um componente, a nossa navegacao por abas da nossa tela um componente
+ entao agente tem que entender que tudo dentro da nossa aplicacao vai ser componentes, agente vai fazer componentes e vai entender como e que
+ funciona na pratica mais para frente, mas aqui dentro deste primeiro componente agente tem uma view, esta view agente esta importando 
+ do react native, expoe varias tags para agente utilizar, como se fosse as tags que agente tem la no html, quando agente quer colocar um imput
+ agente vai colocar o textimput, quando agente quer importar o botao, agente vai importar o button, ta tudo aqui dentro do react native, e aqui agente 
+ eta importando o view e o text, o view e como agente esta importando uma caixa, entao agente vai utilizar a view quando agente precisa estilizar alguma coisa
+criar aguma caixa no nosso codigo e assim por diante, eu posso criar uma view, eu posso passar uma propriedade chamada style.box, e aqui eu nao estou utilizando
+classes, agente nao utiliza classes no react native para fazer estilizacao o id ou qualquer coisa assim e aqui dentro eu nao vou passar nenhum conteudo e eu posso 
+fechar a tag, aqui embaixo no css eu vou criar uma estilizacao para esta box, e eu vou dar um width de 60, uma fonte de 60 e um background color de f00, vou salvar 
+e agente vai ver que esta caixa veio para dentro do nosso emulador, o react native esta renderizando isto aqui de forma nativa, isto nao e css ou html o que faz  react
+native manter uma performance muito legal, o que agente pode erceber aqui e que quando agente vai fazer um css da nossa aplicacao, agente utiliza esta classe
+style.sheet do react native, o style.sheet .create passa toda as nossas estilizacoes aqui para dentro, e agente consegue acessar as estilizacoes do react native aqui no 
+nosso componente, o nosso componente ele tem apenas um metodo obriatorio que e o nosso render, este render e a parte visual que o nosso componente vai retornar para o nosso 
+usuario, entao sempre o metodo render e o unico metodo obrigatorio, e ai depois agente vaai teer mais metodds aqui dentro, agente vai falar sobre isto mais para frente mas o render
+e a parte visual que ele vai retorna mesmo, entao esta parte de estilizacao ja foi componentes ja foi e a parte de stylesheet e be interessanteagente entender que agente nao vai ter 
+que nem no css a utilizacao do ifem, entao agente vai fazer tudo com a parte em camel case e agente utiliza aqui as aspas quando agente for utilizar as strings no valor css, alm disso 
+uma coisa muito legal que agente temque saber do react native e que toda a estilizacao e feita utilizando o flex box layout, que e uma funcionaalidade, uma forma de criar layouts, implementadada
+no css3, inclusive agente tem videos no rocketseat como utilizar o flexbox layouts bem legais, mas eu falei isto basicamente porque agente precisa entender que todos os componentes do react native
+eles tem automaticamente o display flex embutidos nele entao agente tem que automaticamente utilzar todos estes elemetos como flex, justifiyconetnt align itens, porque todos eles estao como display flex
+beleza, e aqui agente pode fazer uma representacao de como este dispaly flex fucniona rapidinho,    
+ 
+
