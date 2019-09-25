@@ -1,1 +1,36 @@
 00.18.29
+
+O que agnte vai comecar configurando a navegacao da aplicacao
+entao como na aplicacao agente vai ter mais de uma rota agente 
+vai comecar utilizando uma biblioteca chamada react navigation 
+e uma biblioteca muito utilizada para esta parte de navegacao,
+
+instale a versāo 2.18.3
+
+yarn add react-navigation@2.18.3
+
+Eu vou comecar fazendo o seguinte, eu vou criar uma  pasta src 
+para colocar todo o codigo da nossa aplicacao aqui dentro, outra
+coisa que eu vou fazer e deletar o aqrquivo app.js, sim agente vai
+deletar este arquivo porque evo vou recriar ele do zero, vou deletar aqui 
+a nossa aplicacao vai dar erro concerteza, e aqui dentro da pasta src vou 
+comecar fazendo o seguinte, vou criar uma pasta pages, vou criar tambem um arquivo
+chamado routes.js e um arquivo inddex.js e agente vai  comecar modificando aqui
+nossa page beleza, vou cirar aqui dentro da pasta pages um arquivo main.js como se
+fosse a pagina inicial 
+
+e aqui o nosso react navigation ele tm varios tipos de navegacao, la no blog da rocketseat
+voce encontra posts sobre isto, o react navigation, mas o createstacknavigation ele vai dar acesso 
+para agente a uma navegacao que agente chama de stack, uma navegacao que agente faz geralmente por clicks 
+em botoes beleza, ai agente tem tambem navegacao por abas, navegacao por menu lateral, a unica coisa que agente 
+vai utilizar e por botao mesmo, eu vou comecar importando a nossa pagina main que agente acabou de criar que esta dentro 
+da pagina pages main e ai aqui de dentro eu vou dar um exports, default create stack navigator, eu vou exportar um stack 
+navigator daqu de dentro e aqui eu posso pasar um objeto, primeiramente dentro deste objeto o que eu vou fazer e repassar
+este main aqui para dentro, so isso, e ai ele javai entender que a primeira 
+
+agora nos vamos dar umaarrumada no nosso arquivo index.js, eu vou importar o react, e aqui veja que eu nao importei o component
+agente ja vai falar porque queeu fiz isto, vou importar aqui o  meu arquivo de rotas, e aqui eu vou fazer o seguinte, const app, 
+e aqui eu nao estou criando uma classe, porque que eu nao estou criando uma classe, outra forma da gente definir componentes com react 
+e criando simplesmente funcoes, uma funcao agente pode criar utilizando desta forma, arrow,functions, uma funcao que simplesmente retorna um codigo
+jx, isto aqui que eu estou fazendo aqui, e a mesma  coisa se eu tivesse fazendo isto aqui,   
+
