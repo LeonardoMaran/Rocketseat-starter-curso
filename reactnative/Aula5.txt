@@ -1,0 +1,6 @@
+Aula 5 00.24.48 
+
+Fala dev, o que agente vai fazer agora e dar uma estilizada
+no header porque eu nao quero deixar ele com a cor branca eu
+quero deiar elee com uma cor laranja, e tambem agente vai avancar 
+um pouco mais aqui n aplicacao, 

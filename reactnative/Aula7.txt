@@ -1,0 +1,8 @@
+Aula 7. 00.37.07 dentro do react agente tem um  conceito que se chama
+
+estado 
+
+Estado e basicamente uma variavel que e um objeto que serve para agente armazenar
+toda e qualquer infomacao que agente vai manipula para dentro a nossa classe, entao agente 
+nao vai ter simplesmente variaveis aqui dentro do javascript, toda as variaveis agente vai vir 
+para dentro do estado, 00.37.31, main.js, 

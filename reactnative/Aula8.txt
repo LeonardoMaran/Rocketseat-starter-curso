@@ -1,0 +1,6 @@
+Aula8 00.41.51
+
+O que agente vai faazer nesta aula e lisstar os produtos que  agente puxou da api em tela
+ enquanto agente esta listando aqui o titulo do produto utilizando aqui o map, nao e o jeito mais recomendando
+ de agente fazer uma lista dentro do react native, toda a vez que agente vai mostrar uma lista de dados, sempre que 
+ agente entender que e uma lista de informacoes, agente vai importar um componente do react native chamado FlatList main.js      

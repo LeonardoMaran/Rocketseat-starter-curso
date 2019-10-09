@@ -1,0 +1,28 @@
+Aula6, 00.28.16, e a partir da proxima agente vai fazer listageem de dados
+a partir da api, para agente trazer alguns dados aquiem tela agente vai colocar
+aluns produtos como se osse projetos web, projetos javascript ou lignuage de programacao
+genericos, agente vai mostrar alguns produtos em tela e ai agente vai construir uma api em 
+node js, para agente fazer esta lisstagem beleza, vamos utilizar o insomnia, e a biblioteca axios 
+para buscar os dados da api para agente, beleza, o que agente vai fazer e criar uma pasta services
+aqui dentro da pasta src, esta pasta services eu gosto de utilizar geralmente quando agente tem algum
+tipo de servico 
+
+ Aula 6 00.28.29, eu  construi uma API e node.js para agente fazer esta listagem beleza, agora praticamente
+ para mostrar como estes dados sao  retornados, eu continuo utilizando o insomnia que e 
+ basicamente para agente captar dados da api, a url que a minhha ap esta  e esta aqui, https://rocketseat-node.herokuapp.com/api
+ e a aprtir daquia  rota que eu estou acessando e /products,e ai quando eu dou um send aqui agente vai ver que retorna basicamente 
+ esta estruturade dados, como eu estou usando paginacao, ele nao retorna todas as paginas numa porrada so, entao ele retorna a 
+ primeira pagina com 10 registros e como ele tem um total de 13 produtos, projetos cadastrados, ele tem duas paginas, e assim a 
+ estrutura do projeto que eue estou utilizando, 00.29.35, aqui dentro de docs eu vou ter o meu produto em si, ele tem basicamente 
+ esta estrutura, um id, um titulo,uma  descricao, uma url e tambem tem a dat de criacao aqui que no caso agente nao vai utilizar, beleza,
+ entao agente vai acessar estes dados da api, e vamos mostrar ele em tela aqu na nossa aplicacao com o react native, beleza, para isto agente
+ vai utilizar aqui dentro uma biblioteca chamada axios que vai fazer este papel de busscar dados na api para agente entao vamos comecar insstalando 
+ o axios,    
+
+ yarn add axios
+
+ vamos esperar um pouqinho quando ele faz a instalacao, mas agente ja consegue mecher um pouquinho no codigo, o que agente vai fazer
+ e criar uma pasta services dentro da pasta src, a pasta services eu gosto de utilizar geralmente quando agente tem algum tipo de servico
+de envio de dados, recebimento de dados, entao se agente tiver por exemplo, conexao de banco de dados local, quando agente tiver este consumo 
+a esta api, quando agente for utilizar graphql agente coloca em services, agente vai criar uma interface para consumir ou receber dados, e aqui 
+eu vou importar o axios que agente acabou de instalar, 00.30.58      
