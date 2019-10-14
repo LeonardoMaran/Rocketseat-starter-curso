@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import api from '../services/api';
 
-import {View, Text, FlatList} from "react-native";
+import {View, Text, FlatList, TouchableOpacity} from "react-native";
 import { defaultCoreCipherList } from "constants";
 
 
@@ -83,11 +83,39 @@ this.setState({ docs});
 
     };
 
+    renderItem = ({Item}) => (
+       <View>
+       <Text>[item.title]</Text>
+       <Text>[item.description]</Text>
+
+       <TouchableOpacity onPress ={() => {}}>
+        <Text>Acessar</Text>
+       </TouchableOpacity>
+       </View>
+    );
+
 //Aula 8 00.43.57 e agora eu vou chamar o render item aqui dentro, eu vou criar esta funcao, e o render 
 //item ele recebe uma serie de parametros aqui dentro e aqui agente pode utilizar desestruturacao nos parametros 
 //aqui dentro para receber o nosso item, exatamente este item aqui e o que guarda todas as informacoes do nosso produto 
 // e ai  agente va ter acesso a ee ao title, descirption e tudo mais, e agora aqui, ao inves de eu utilizar as chaves, como 
-// eu falei anteriormente la dentro do map eu posso utilizar direto os parenteses quando eu quero um return direto 00.44.29     
+// eu falei anteriormente la dentro do map eu posso utilizar direto os parenteses quando eu quero um return direto 00.44.29
+// de algum conteudo jsx e aqui dentro dai agora eu vou comecar com uma view, vou dar um style para ela, vou deixar sem estilo 
+// entao eu vou ter uma view, eu sempre preciso de um componente por fora, eu jamais posso fazer no react native por exemplo
+// um text aqui e outro text embaixo, veja que eu tenho dois componentes no mesmo nivel, eu sempre preciso de uma view por fora 
+// destes dois, quando e tenho uma nova funcao, quando eu tenho um map, entao agora eu vou ter o titulo do produto, eu posso colocar
+// item.title, ou ter a escricao,  eu posso colocar item, description, e agora, mas para eu criar um botao dentro do react native tem varias
+// formas, eu posso criar um button, que ele faz uma    pre estilizacao deste botao baseado na plataforma, se e ios, android ele ja tem um 
+// estilo do botao, ou eu posso utilizar as classes touchable do ract native, 00.45.47, e eu tenho varios, touchable, hightlhit, etc, e ai ele tem
+// algumas diferenca entre eles, mas eu vou estar utilizando aqui por exemplo o touachable opacity, que e quando o usuario clica no botao
+// ele abaixa um pouquinho a opacidade para o usuario que ele esta  clicando encima do botao, mas ai voce pode ver a diferenca do touchable la dentro
+// da documentacao do react ntive, vou colocar o tuchable aqui dentro e aio touchable tem uma proriedade obrigatoria que e o onpress que e basicamente 
+// qua funcao agente quer executar assim que o usuario clicar no botao 00.46.25, por padrao eu vou deixar umafuncao anonima  aqui sem retorno nenhum so para
+// existir, ai eu vou fechar o nosso touchabel opacity, e uma coisa que agente tem que entender no react native e que toda a vez que agente tiver texto
+// agente nao  pode simplesmente so dentro do touchable jogar um texto aqui, por exemplo acessar, nao vai funcionar, agente precisa da tag text por volta de 
+// todo o texto do react native, eu vou salvar isto aqui agora, agentee va ver isto aqui sendo exibido em tela, how de bola ta vendo qye o acessar esta aqui
+// eu clicko nele aqui e da uma  opacidadezinha, equanto agente nao tem estilizacao nenhuma nesta lista que e o que agente vai fazer a partir da proxim aula,
+// 00.47.11
+                 
 
   //00.39.25 eu vou abrir aqui um codigo javascript e vou fazer o seguinte , this ponto state
   // ponto docs que e a nosssa variavel que e aonde vai estar a nossa array de docs la da api 
@@ -132,7 +160,7 @@ this.setState({ docs});
                //{this.state.docs.map(product =>
                //(<Text>{product.title}</Text> ) )} 
           // </View>  */}    
-             
+             </View>
         );
 
 
