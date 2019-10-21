@@ -1,0 +1,91 @@
+01.24.23 - 01.33.18 Async await
+
+Nova forma de trabalhar com programacao asincrona dentro do javascript
+
+O que e esta programacao asincrona, e voce ja viu o nosso javascript basico, voce sabe
+que existe as promisses, ao as formas de agente realizar acoes asincronas e as promisses
+sao muito utilizadas para agente fazer requisicoes a API, a endpoints a servidores backend 
+assim por diante, eu posso criar promisses yambem de forma manual no javascript, vou comecar
+com uma constante que vai ser uma funcao que retorna uma promisse, e nesta promisse aqui dentro
+utilizando arrow functions vou pegar o resolve e o reject, e vou conseguir retonar alguma coisa
+e aqui eu vou utilizar o set time out utilizando uma arrow functions, para chamar o resolve passando
+o ok depois de dois segundos, basicamente isto aqui e a criacao de uma prommise comum, agente nao 
+vai ver isto porque nao faz parte do ES6, mas e so uma forma de agente conseguir fazer com que alguma coisa
+demore para executar, como se fosse uma chamada api que agente vai ver mais para frente
+
+
+const minhaPromisse = () => new Promisse((resolve,reject))=>
+setTimeout(()=>{resolve('ok')},2000);});
+
+e agora a promisse ela tem este efeito aqui, eu posso fazer minhapromisse ponto them e dai eu pego o resultado
+ e posso dar um console log neste resultado, vamos testar nisto aqui, eu vou executar elavamos abrir o console log,
+ quando agente executa dois segundo depois ele da o ok. Este e o efeito da promisse, agenet consegue trabalhar com este 
+ delay com este asincronismo dentro do javascript, e aqui dentro a promisse ela sempre tem a mesma sintaxe, agente tem o 
+ .them e o .catch para pegar os erros, entao agente tem esta  sintaxe aqui, a partir do es8, agente consegue usar a sintaxe 
+ do async await que vai deixar o codigo muito mais limpo, entao como e que eu utilizo esta sintaxe do async await
+ primeiramente eu comeco definindo uma funcao, entao eu vou definir aqui function executa promisse sempre tem  que ter uma funcao
+ por volta, e dai no comeco da funcao eu faco o seguinte, async e dai eu faco a funcao executa promisse e aqui dentro eu posso utilizar 
+ o await para quando eu quero a mesma coisa que o ponto them, vamos entender isto aqui, minha promisse ponto them e dai eu pegava o response
+ e fazia alguma coisa com este repsonse, o que eu posso fazer agora e definir uma constante reesponse, eu estou passando esta parte do response
+ para o comeco, igual a await e aqui o nome da funcao que vai me retornar a promisse que eu faco o ponto them, entao e minha promisse, entao eu dou um 
+ await minha promisse e agora eu posso dar um console log response normalmente tranquilo, entao executa promisse e eu devo ter o mesmo resultado 
+ que antes. agente precisa instalar uma biblioteca para poder trabalhar o async await dentro do nosso babel porque o async awaitt como e uma funcao 
+ do es8 ele ainda nao esta integrada automaticamente la ao nosso babel preset env, entao agente tem que instalar um novo plugin aqui dentro, e como e que 
+ agente faz isso, agente vai abrir  o terminal e vamos fazer o seguinte
+
+ yarn add @babel/plugin-transform-async-to-generator -D 
+
+ esta e a primeira coisa queeu vou instalar, eu vou colocar um ifem D maiusculo para ele instalar como uma dependencia de 
+ desenvolvimento.
+
+ Eu vou precisar alem disso uma outra dependencia
+
+ yarn add @babel/polyfill -D 
+
+ outra dependencia qe vai trazer novas funcionalidades aqui pro nosso babel, e agora eu vou precisar fazer algumas alteracoes
+ primeira coisa eu vou copiar este babel async plugin e colar no meeu babel.lrc entao ja esta
+ aqui e o babel polifyl eu vou colocar em outro lugar, o meu webpack confing.js no entry eu vou 
+ transformar num array e no primeiro parametro u vou colocar o @babel/polyfill entao ele vai 
+ carregar o babel polyfil antes de carregar o nosso main.js basicamente para ele conseguir repassar isto aqui,
+
+ eu  vou   salvar agora vou vir aqui no yarn, vou cancelar e executar ele de novo, show de bola se eu atualizar
+ aqui a minha pagina eu ja tenho a meesma funcionalidade que eu tinha antes agora utilizando o async await beleza
+
+
+entao o que aconteceu com o async await, agente ao inves de ter que ficar utilizando .then .catch toda a vez 
+agente pode definir aqui um async e aqui dentro agente  pode trabalhar quantas vezes agente quiser com o await,
+entao agente nao precisa ter aquele codigo utilizando callback, utilizando cascata, agnete pode simplesmente ter 
+varios awaits, simplesmente um  embaixo do outro, e dai a segunda linha so vai  executar a partir do momento que a 
+primeira linha executar.
+
+async funciton executaPromisse(){
+
+    console.log (await minhaPromisse());
+    console.log (await minhaPromisse());
+    console.log (await minhaPromisse());
+    
+
+    console.log(response);
+
+}
+
+executaPromisse();
+
+Isto com uma  sintaxe muito simples 
+
+
+O que acontece quando agenet cria uma async function, automaticamente a funcao vira
+uma promisse, agente nao vai poder usar um await numa promisse se agente nao tiver 
+numa funcao com o async, entao  por exemplo neste caso aqui ele daria erro porque o 
+await esta sendo utilizado fora de uma funcao asincrona, outra coissa legal tambem e 
+que agente consegue ussar o async await com arrow functions
+
+const executPromisse = async  () => {
+     
+};
+
+e no async agente na colocaria na frente agente colocaria logo aqui nos parametros da funcao
+e se agente executar agora agente vai ter o mesmo resultado que agente tinha antes. Entao o async await 
+vai ajudar agentee muito a controlar esta parte de programacao assincrona dentro do javascript agente vai utilizar
+muitos exemplos de async await que vai reforcar tudo isto aqui na  sua mente e voce vai entender isto aqui com maestria
+

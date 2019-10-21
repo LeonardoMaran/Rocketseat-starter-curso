@@ -1,0 +1,12 @@
+Aula1-introducao 00.02
+
+- O que e 
+- Onde e aplicado
+
+-Variaveis
+- funcoes
+- Condicionais
+- Estruturas de Repeticao
+- Manipulacao de DOM
+- Requisicoes Assincronas=
+- Construindo um app do zerp

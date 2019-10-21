@@ -1,0 +1,2 @@
+00.40.28 funcionalidade padrao tanto para funcoes comuns quanto arrow functions 
+colocar valores padrao parametros da funcoes

@@ -1,0 +1,26 @@
+00.48.32 O que agente vai fazer nesta aula e a parte de 
+navegacao da nossa aplicacao
+
+Começar configurando a parte de navegacao
+
+instalar react router dom
+
+yarn add react-router-dom
+
+-criar arquivos pasta src routes.js
+-importar react
+-importar componentes do react dom browserRouter, switch, route
+-importar pagina main 
+-criar componente routes - apenas como uma funcao
+-colocar dentro o browserRouter-ele vai definir que agente esta utilizando
+as rotas atraves de um browser
+-Dentro eu vou utilizar o switch-ele vai permitir que apenas uma unica rota seja chamada ao mesmo tempo
+-Ir no app js e importar as nossas rotas,ao inves usar o main vou usar as nossas rotas
+- Ja temos a parte de roteamento aplicados e assim coneguimos navegar na aplicacao
+-Para testar isto vamos ter que fazer algumas alteracoes
+-criar pasta products exibir detalhes do produto consegue acessar
+-dentro criar arquivo index.js 
+
+
+
+

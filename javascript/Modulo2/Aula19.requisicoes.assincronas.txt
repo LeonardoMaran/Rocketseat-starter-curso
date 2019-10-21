@@ -1,0 +1,10 @@
+01.29.11 utilizar biblioteca axios requisicoes assincronas
+
+vamos aprender a utilizar a bibliteca axios para poder fazer as
+requisicoes assincronas do nosso javascript, entao as requisicoes 
+ajax que agenteprecisa buscar informacoes do servidor que agente 
+utilizou xmlhttprequest ate agora agente vai  utilizar o axios no lugar 
+blz. 
+
+
+

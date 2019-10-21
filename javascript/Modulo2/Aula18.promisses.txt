@@ -1,0 +1,7 @@
+01.22.19 - Promisses
+
+Promisses ou promessas - Codigos que nao vao influenciar na linha do tempo do nosso Codigo
+javascript, sao funcoes que vao devolver o valor de resultado de sucesso ou erro 
+so depois de um tempo, nao precisa se preocupar quando o valor vai ser retornado porque o nosso
+javascript vai continuar executando normalmente 
+

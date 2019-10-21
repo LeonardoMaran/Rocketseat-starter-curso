@@ -1,0 +1,3 @@
+00.32.07 - Operadores Logicos
+
+Estruturas de repeticao javascript

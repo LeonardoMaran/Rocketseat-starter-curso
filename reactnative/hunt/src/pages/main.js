@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import api from '../services/api';
 
-import {View, Text, FlatList, TouchableOpacity} from "react-native";
+import {View, Text, FlatList, TouchableOpacity, StyleSheet } from "react-native";
 import { defaultCoreCipherList } from "constants";
 
 
@@ -84,15 +84,29 @@ this.setState({ docs});
     };
 
     renderItem = ({Item}) => (
-       <View>
-       <Text>[item.title]</Text>
-       <Text>[item.description]</Text>
+       <View style={styles.productContainer}>
+       <Text style={styles.productTitle}>{item.title}</Text>
+       <Text style={styles.productDescription}>[item.description]</Text>
+
 
        <TouchableOpacity onPress ={() => {}}>
         <Text>Acessar</Text>
        </TouchableOpacity>
        </View>
     );
+
+    //Aula09.00.47.21 eu vou comecar aplicando aqui mesmo sem existir o objeto styles ainda
+    // algumas propriedades de estilos para o elemento em tela, entao para esta view aqui por fora 
+    // de tudo eu gosto de utilizar o nome container, aqui no flat list, ao inves de utilizar a propriedade
+    //style eu gosto de utilizar a contentcontainerstyle que e para quando agente quer estilizar 
+    // a parte do conteudo da flatlist e nao a flatlist em si, e como se fosse um elemento dentro do
+    //outro, e aqui agente vai chamar um tile chamado list beleza, e agora para este itens do item aqui, 
+    // entao  eu vou comecar com o estilo do noss container do item, que eu vou  chamar de  product container 
+    // aqui pro titulo eu vou  chamar de style. product title, aqui para a nossa description, e agora para o 
+    //nosso botao eu vou ter tanto um estilo pro proprio botao ue eu vou botar styles. products button 
+    // e tambe rpo texto deste botao,  aui eu vou colocar um styles dentro do products butto text, show de bola 
+    // agora agente ja criou, vou fazer a  parte  de  estilizacao.00.48.31, para isto eu vou importar o stylesheet
+    // do react native que e a classe de estilizacao, e aqui embaixo eu vou definir uma variavel style  
 
 //Aula 8 00.43.57 e agora eu vou chamar o render item aqui dentro, eu vou criar esta funcao, e o render 
 //item ele recebe uma serie de parametros aqui dentro e aqui agente pode utilizar desestruturacao nos parametros 
@@ -167,7 +181,59 @@ this.setState({ docs});
     }
 }
 
-     
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: "#fafafa"
+    },
+
+    list:{
+        padding:20
+
+    },
+
+    productContainer:{
+        backgroundColor: '#FFF',
+        borderWidth:1,
+        borderColor: '#DDD',
+        borderRadius: 5,
+        padding:20,
+        marginBottom: 20,
+    },
+
+    productTitle: {
+        fontSize:18,
+        fontWeight:"bold",
+        color: "#333"
+    },
+
+    productDescription: {
+        fontSize: 18,
+        color: "#999",
+        marginTop: 5,
+        lineWeight: 24
+    },
+
+    productButton:{
+       height: 42,
+       borderRadius:5,
+       borderWidth: 2,
+    }
+});
+ 
+//Aula9 00.48.51, basicamente o que eu vou fazer no nosso container, eu vou simplesmente dar um background
+//um pouqinho mas escuro, e aui eu vou utilizar aqui um cinza bem clarinho, beleza, fiou bem legal, mas o que
+//agente pode perceber aqui, a nossa cor deste cinza nao ocupou todaa tela, para agente fazer o reactnative ocupar 
+//a tela toda e so colocar um flex 1 no container que ele vai fazer este  papel para a gente, agora sim agente ja ocupou 
+// a tela. Agora eu vou dar uma estilizada no nosso list, que e o nosso flat list, que eu vou colocar simplesmente um 
+//padding de 20px para ele nao ficar colado nas laterais, coisa bem legal do flat list e que ele ja vem com a parte de 
+//scroll integrada, entao no ios vc consegue fazer isto aqui e no android voce so vai cosenguir fazer caso o conteudo passar
+//da tela inteira,show de bola, agora agnte vai comecar estilizar os nossos items que e o productcontainer, que que eu vou fazer
+//nestes items, eu vou colocar o backgroudColor, #fff, agente vai colocar border width de 1 px. 
+//e vou colocar uma border color de ddd que e um cinza mais escuro, e eu vou utilizar tambem um border radius para ficar com 
+//a borda arrendondada, e vou colocar um padding de 20px para ficar tambem um espacamento intenro legal, agente vai deixar mais legal
+//ainda, vou estilizar aqui o product title, que e o titulo aqui do nosso produto, vou definir baiscamente o fontsize maior que e o 18,
+//o fontweight, e a ultima coisa qu eu vou fazer agora e o botao, para isso eu vou  colocar o productbutton, agente vai colocar nele
+//um heightfico 00.52.25
 
 {/* // Aula 4 00.24.26 vir aqui no  nosso componente main, 
 // vamos adicionar uma propriedade estatica na classe chamaada

@@ -1,0 +1,19 @@
+00.22.43 Buscar os produtos da pai e exibir em tela
+
+instalar Axios 
+
+yarn add Axios
+
+criar pasta services dentro da pasta src
+
+criar arquivo api.js dentro pasta services
+
+no arquivo api  importar o Axios
+
+criar variavel api = axios.create
+
+vou passar uma url base, todas as requisicoes vao  partir desta url
+
+vou var um export default api para exportar e expor esta conffiguracao
+
+vou no meu  app.js vou dar um import api 

@@ -1,0 +1,26 @@
+01.04.22 Configurar o webpack
+
+O que agente vai fazer nesta alua e configurar o webpack
+o webpack e como se fosse um servico que vai nos disponibilizar 
+uma forma que vai poder agente trabalhar com varios arquivos js 
+em nossa aplicacao, entao agente va poder alem de ter  arquivo main 
+.js, vamos poder ter varias pastas e arquivos nao so js, vamos poder
+pegar arquivos de imagens json, arquivo css, tudo atraves do javascript
+utilizando o webpack, todo este codigo produzido em javascript ainda vai ser
+ainda vai ser transpilado e convertido em um umico arquivo bundle.js com todas
+as informacoes. Beleza, entao para comecar a configurar o nosso webpack agente 
+vai fazer o seguinte aqui no nosso terinal eu vou cancelar o nosso servico que 
+esta executando o babel aqui e vou fazer um yarn add webpack, webpack cli, 
+antes de agente continuar eu vou 
+
+yarn add webpack webpack-cli -D
+
+antesde agente continuar, agente vai fazer aqui no nosso package json 
+e que por enquant agente ja esta instalando como dependencias porem estas dependencias 
+que agente esta instalando aqui do babel tudo isto aqui sao dependencias que agente vai precisar
+apenas do ambiente de desenvolvimento e nao no ambiente de producao quando a aplicacao estiver la rodando
+online beleza, porque la no online o babel nao vai precisar fazer nada, ele so vai gerar o bundle.js  
+entao agente pode mudar de dependcis para devDependences, e agora quando agente for instalar uma nova
+dependecia seja apenas para deenvolvimento que e o caso do webpack eu posso colocar o ifem D maiusculo
+que ele vai colocar as dependecias tambem no nosso objeto de dependecia do desenvilvmento. 01.06.35
+
